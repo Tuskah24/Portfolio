@@ -88,6 +88,66 @@ nav .right a span {
     width: 350px;
 }
 
+/* Section 2 */ 
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+    gap: 10px;
+
+}
+
+.skills-section .cells .cell img {
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    
+}
+
+.skills-section .cells .cell span {
+    font-size: 18px;
+}
+
+/* Section 3 */
+.proficiency-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.proficiency-section .lang-tech .list,
+.proficiency-section .languages .list  {
+    text-align: center;
+    list-style-type: none;
+}
+
+
 @media (max-width: 850px) {
     /* Section 1: Hero */
     .hero-section .text h2 {
@@ -122,4 +182,41 @@ nav .right a span {
         display: none;
         
     }
+
+    /* Section 1: Hero */
+    .hero-section {
+        padding: 0 20px;
+    }
+
+    .hero-section .text h2 {
+        font-size: 30px;
+    }
+
+    /* Section 2: Skills */ 
+    .skills-section {
+        padding: 0 20px;
+
+    }
+
+    .skills-section .cells .cell span {
+        font-size: 16px;
+    }
+
+    /* Section 3 */
+    .proficiency-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lang-tech {
+        margin-bottom: 80px;
+    }
+
+    .proficiency-section .lang-tech h2,
+    .proficiency-section .languages h2 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+
 }
